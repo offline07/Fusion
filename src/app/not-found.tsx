@@ -10,7 +10,7 @@ export default function NotFound() {
         The page you asked for does not exist. Head back to the course overview to find your
         place.
       </p>
-      <Button render={<Link href="/" />}>Back to the course</Button>
+      <Button nativeButton={false} render={<Link href="/" />}>Back to the course</Button>
     </div>
   );
 }

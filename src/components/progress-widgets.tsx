@@ -89,7 +89,7 @@ export function ContinueCard() {
               You finished every lesson. Build the keepsake box again with a new size and see what breaks.
             </p>
           </div>
-          <Button variant="outline" render={<Link href="/reference" />}>
+          <Button variant="outline" nativeButton={false} render={<Link href="/reference" />}>
             Open the reference sheets
           </Button>
         </CardContent>
@@ -114,7 +114,7 @@ export function ContinueCard() {
               {target.lesson.minutes} min &middot; {target.lesson.kind === "lab" ? "Hands-on lab" : "Video + hands-on"}
             </p>
           </div>
-          <Button size="lg" render={<Link href={lessonHref(target.lesson.slug)} />}>
+          <Button size="lg" nativeButton={false} render={<Link href={lessonHref(target.lesson.slug)} />}>
             {isStart ? <PlayCircle data-icon="inline-start" /> : null}
             {isStart ? "Begin lesson 1" : "Resume"}
             {!isStart ? <ArrowRight data-icon="inline-end" /> : null}

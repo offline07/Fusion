@@ -99,7 +99,7 @@ export default async function LessonPage({ params }: PageProps<"/lessons/[lesson
               <p className="mt-1 text-sm text-muted-foreground">
                 Watch once straight through, then keep it open while you work the steps below.
               </p>
-              <VideoEmbed video={lesson.video} className="mt-4" />
+              <VideoEmbed video={lesson.video} className="mt-4" priority />
               {lesson.alsoWatch?.length ? (
                 <div className="mt-6">
                   <p className="text-sm font-medium">Also worth watching</p>

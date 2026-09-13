@@ -6,7 +6,15 @@ import { ExternalLink, Play } from "lucide-react";
 import type { Video } from "@/data/course";
 import { cn } from "@/lib/utils";
 
-export function VideoEmbed({ video, className }: { video: Video; className?: string }) {
+export function VideoEmbed({
+  video,
+  className,
+  priority = false,
+}: {
+  video: Video;
+  className?: string;
+  priority?: boolean;
+}) {
   const [playing, setPlaying] = useState(false);
   const watchUrl = `https://www.youtube.com/watch?v=${video.youtubeId}`;
 
@@ -35,7 +43,7 @@ export function VideoEmbed({ video, className }: { video: Video; className?: str
               fill
               sizes="(min-width: 1024px) 720px, 100vw"
               className="object-cover opacity-90 transition-opacity group-hover:opacity-100"
-              priority={false}
+              priority={priority}
             />
             <span className="relative grid size-16 place-items-center rounded-full bg-primary text-primary-foreground shadow-lg transition-transform group-hover:scale-105">
               <Play className="ml-1 size-7" fill="currentColor" />

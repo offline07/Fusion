@@ -48,7 +48,7 @@ export function LessonCompleteBar({
           {complete ? "Mark as not done" : "Mark lesson complete"}
         </Button>
         {complete && next ? (
-          <Button variant="secondary" render={<Link href={lessonHref(next.lesson.slug)} />}>
+          <Button variant="secondary" nativeButton={false} render={<Link href={lessonHref(next.lesson.slug)} />}>
             Next lesson <ArrowRight data-icon="inline-end" />
           </Button>
         ) : null}
