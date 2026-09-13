@@ -24,6 +24,8 @@ Progress (completed lessons, checked steps, quiz answers) is stored in `localSto
 Requires Node.js 20 or newer.
 
 ```bash
+git clone https://github.com/offline07/Fusion.git
+cd Fusion
 npm install
 npm run dev
 ```
