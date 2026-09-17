@@ -1,0 +1,13 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "fusion-workshop-course",
+  "compatibility_date": "2026-09-01",
+  "assets": {
+    "directory": "./out",
+    "not_found_handling": "404-page",
+    "html_handling": "auto-trailing-slash"
+  },
+  // Cloudflare creates the DNS record for a custom domain automatically on deploy.
+  "routes": [{ "pattern": "fusion.topsideinnovations.com", "custom_domain": true }],
+  "observability": { "enabled": true }
+}

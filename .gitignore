@@ -43,3 +43,8 @@ next-env.d.ts
 # local tool caches
 agent-tools/
 terminals/
+
+# Next static export and Cloudflare
+/out
+.wrangler/
+.dev.vars

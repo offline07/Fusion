@@ -37,6 +37,18 @@ npm run build
 npm start
 ```
 
+## Deploying to Cloudflare
+
+The site is a static export served by Cloudflare Workers static assets, configured in `wrangler.jsonc` with the custom domain `fusion.topsideinnovations.com`.
+
+```bash
+export CLOUDFLARE_API_TOKEN=...   # token with Workers Scripts:Edit and Workers Routes:Edit on the zone
+export CLOUDFLARE_ACCOUNT_ID=...
+npm run deploy                    # next build && wrangler deploy
+```
+
+`npm run preview:cf` builds and serves the export locally through Wrangler.
+
 ## Project layout
 
 ```
