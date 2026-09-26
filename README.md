@@ -19,6 +19,10 @@ The Reference page includes feeds-and-speeds tables for hobby routers, FDM desig
 
 Progress (completed lessons, checked steps, quiz answers) is stored in `localStorage`; there is no account or backend.
 
+## Share it
+
+The public site is [https://offline07.github.io/Fusion/](https://offline07.github.io/Fusion/). Pushing to `main` republishes it through GitHub Pages (`.github/workflows/pages.yml`).
+
 ## Running locally
 
 Requires Node.js 20 or newer.
